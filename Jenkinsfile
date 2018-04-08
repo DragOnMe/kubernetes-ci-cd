@@ -13,7 +13,7 @@ podTemplate(label: 'hello-kenzan', containers: [
         def DOCKER_HUB_ACCOUNT = 'drlee001'
         def DOCKER_IMAGE_NAME = 'hello-kenzan'
         def K8S_DEPLOYMENT_NAME = 'hello-kenzan'
-        def POD_NAMESPACE = 'ns-jenkins'
+        def POD_NAMESPACE = 'default'
 
         stage('Clone hello-kenzan App Repository') {
             checkout scm
